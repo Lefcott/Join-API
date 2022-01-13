@@ -10,6 +10,7 @@ defmodule Join.Application do
     children = [
       # Start the Ecto repository
       Join.Repo,
+      # [show_sensitive_data_on_connection_error: true],
       # Start the Telemetry supervisor
       JoinWeb.Telemetry,
       # Start the PubSub system

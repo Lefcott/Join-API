@@ -2,12 +2,9 @@ import Config
 
 # Configure your database
 config :join, Join.Repo,
-  username: "postgres",
-  password: "gl2021",
-  database: "join_dev",
-  hostname: "localhost",
+  ssl: false,
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 2
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
@@ -58,3 +55,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+import_config "dev.secret.exs"

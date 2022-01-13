@@ -22,3 +22,8 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 join-*.tar
 
+# Ignore release
+/rel
+
+# Ignore secrets
+**/*.secret.exs
