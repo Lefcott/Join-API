@@ -8,6 +8,7 @@ defmodule Join.Api.Shop do
     field :main_photo_url, :string
     field :name, :string
     field :type, :string
+    field :description, :string
 
     timestamps()
   end
