@@ -16,7 +16,7 @@ defmodule Join.Api.Shop do
   @doc false
   def changeset(shop, attrs) do
     shop
-    |> cast(attrs, [:name, :type, :main_photo_url, :latitude, :longitude])
+    |> cast(attrs, [:name, :type, :description, :main_photo_url, :latitude, :longitude])
     |> validate_required([:name, :type, :main_photo_url, :latitude, :longitude])
   end
 end
