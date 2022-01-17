@@ -15,6 +15,7 @@ defmodule JoinWeb.ShopView do
       id: shop.id,
       name: shop.name,
       type: shop.type,
+      description: shop.description,
       main_photo_url: shop.main_photo_url,
       latitude: shop.latitude,
       longitude: shop.longitude
