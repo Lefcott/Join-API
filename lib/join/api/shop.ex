@@ -3,7 +3,7 @@ defmodule Join.Api.Shop do
   import Ecto.Changeset
 
   schema "shops" do
-    field :latitude, :integer
+    field :latitude, :float
     field :longitude, :float
     field :main_photo_url, :string
     field :name, :string
