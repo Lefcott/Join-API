@@ -3,7 +3,7 @@ defmodule Join.Repo.Migrations.AddDescriptionToShops do
 
   def change do
     alter table("shops") do
-      add_column(:description, :text)
+      add :description, :string
     end
   end
 end
